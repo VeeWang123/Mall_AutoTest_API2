@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="false">
+  <test name="Test1">
+    <!--<packages>-->
+     <!--<package name="testng"/> -->
+    <!--</packages>-->
+      <classes>
+          <!--<class name="testng.ApiTestNg"></class>-->
+          <class name="testng.ApiTestNgVandreamSample"></class>
+      </classes>
+  </test> <!-- Test -->
+   <listeners>
+             <listener class-name="org.uncommons.reportng.HTMLReporter" />
+              <listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+            <listener class-name="testng.ExcelReport" />
+      </listeners>
+</suite> <!-- Suite -->
