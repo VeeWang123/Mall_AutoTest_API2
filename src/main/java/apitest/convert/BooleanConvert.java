@@ -7,11 +7,8 @@ public class BooleanConvert implements WriteConvertible,ReadConvertible{
 
 	@Override
 	public Object execRead(String object) {
-		if("是".equals(object)) {
-			return true;
-		}
-		return false;
-	}
+        return "是".equals(object);
+    }
 
 	@Override
 	public Object execWrite(Object object) {

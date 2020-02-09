@@ -70,7 +70,7 @@ public class ParamUtils {
 
 			for (String key : keySet) {
 			System.out.println(map.get(key).getClass());
-			String value = (String)map.get(key);
+			String value = map.get(key);
 			param_map.get().put(key+"_g", value);
 
 		}

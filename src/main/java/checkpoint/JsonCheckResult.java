@@ -18,7 +18,7 @@ public enum JsonCheckResult {
     private String msg;
     
 	
-	private JsonCheckResult(boolean result, String msg) {
+	JsonCheckResult(boolean result, String msg) {
 		this.result = result;
 		this.msg = msg;
 	}
