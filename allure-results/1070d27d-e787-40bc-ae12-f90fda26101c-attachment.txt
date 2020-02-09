@@ -1,0 +1,3 @@
+[data0=='OK' map {data0=OK}]
+check  data0=='OK' map {}
+{"status":"OK","code":200,"data":16,"token":null}

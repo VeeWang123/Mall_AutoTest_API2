@@ -1,0 +1,3625 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="2" ignored="0" total="216" passed="214">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="3267" started-at="2019-12-28T14:55:46 CST" finished-at="2019-12-28T14:55:49 CST">
+    <groups>
+      <group name="test2">
+        <method signature="TestngTest2.f1()[pri:0, instance:testng.TestngTest2@26abb146]" name="f1" class="testng.TestngTest2"/>
+      </group> <!-- test2 -->
+      <group name="test3">
+        <method signature="TestngTest3.f2()[pri:0, instance:testng.TestngTest3@72c8e7b]" name="f2" class="testng.TestngTest3"/>
+      </group> <!-- test3 -->
+      <group name="test">
+        <method signature="TestngTest2.f1()[pri:0, instance:testng.TestngTest2@26abb146]" name="f1" class="testng.TestngTest2"/>
+        <method signature="TestngTest3.f2()[pri:0, instance:testng.TestngTest3@72c8e7b]" name="f2" class="testng.TestngTest3"/>
+      </group> <!-- test -->
+    </groups>
+    <test name="Test1" duration-ms="3267" started-at="2019-12-28T14:55:46 CST" finished-at="2019-12-28T14:55:49 CST">
+      <class name="testng.ApiTestNg">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:testng.ApiTestNg@5b7a7f33]" name="beforeClass" is-config="true" duration-ms="808" started-at="2019-12-28T14:55:46 CST" finished-at="2019-12-28T14:55:47 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="FAIL" signature="testcase(apitest.ParamBean)[pri:0, instance:testng.ApiTestNg@5b7a7f33]" name="testcase" duration-ms="1205" started-at="2019-12-28T14:55:48 CST" data-provider="excelobject" finished-at="2019-12-28T14:55:49 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ParamBean [loginname=test1, loginpass=test1]]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[没有设置检查点 did not expect to find [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 没有设置检查点 did not expect to find [true] but found [false]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.failNotEquals(Assert.java:969)
+at org.testng.Assert.assertTrue(Assert.java:43)
+at testng.ApiTestNg.testcase(ApiTestNg.java:105)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:77)
+at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:15)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase -->
+        <test-method status="FAIL" signature="testcase(apitest.ParamBean)[pri:0, instance:testng.ApiTestNg@5b7a7f33]" name="testcase" duration-ms="1205" started-at="2019-12-28T14:55:48 CST" data-provider="excelobject" finished-at="2019-12-28T14:55:49 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ParamBean [loginname=abc, loginpass=abc]]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[没有设置检查点 did not expect to find [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 没有设置检查点 did not expect to find [true] but found [false]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.failNotEquals(Assert.java:969)
+at org.testng.Assert.assertTrue(Assert.java:43)
+at testng.ApiTestNg.testcase(ApiTestNg.java:105)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:77)
+at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:15)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase -->
+      </class> <!-- testng.ApiTestNg -->
+      <class name="testng.DataProviderTest1">
+        <test-method status="PASS" signature="parameterIntTest(java.lang.Class, java.lang.String, java.lang.String, int)[pri:0, instance:testng.DataProviderTest1@431cd9b2]" name="parameterIntTest" duration-ms="52" started-at="2019-12-28T14:55:46 CST" data-provider="testdb" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[class java.util.Vector]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[test1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[a]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(java.lang.Class, java.lang.String, java.lang.String, int)[pri:0, instance:testng.DataProviderTest1@431cd9b2]" name="parameterIntTest" duration-ms="52" started-at="2019-12-28T14:55:46 CST" data-provider="testdb" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[class java.lang.Integer]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[test3]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[c]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(java.lang.Class, java.lang.String, java.lang.String, int)[pri:0, instance:testng.DataProviderTest1@431cd9b2]" name="parameterIntTest" duration-ms="52" started-at="2019-12-28T14:55:46 CST" data-provider="testdb" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[class java.lang.String]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[test2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[b]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(java.lang.Class, java.lang.String, java.lang.String, int)[pri:0, instance:testng.DataProviderTest1@431cd9b2]" name="parameterIntTest" duration-ms="52" started-at="2019-12-28T14:55:46 CST" data-provider="testdb" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[class java.lang.String]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[test3]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[c]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(java.lang.Class, java.lang.String, java.lang.String, int)[pri:0, instance:testng.DataProviderTest1@431cd9b2]" name="parameterIntTest" duration-ms="51" started-at="2019-12-28T14:55:46 CST" data-provider="testdb" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[class java.lang.String]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[test3]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[c]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+      </class> <!-- testng.DataProviderTest1 -->
+      <class name="testng.DataProviderTest2">
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="4" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@4337a423]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@4708289d]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="6" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@1aaa7d92]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@1e95ea1f]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="9" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@4c11fed6]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@482e638c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="4" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@78275d45]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@7c18d699]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="6" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@e828587]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@abd108f]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="4" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@1742e778]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@137d6148]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="7" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@6a14047a]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@6e2b9de0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="3" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@6703facb]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@633c72f3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="5" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@c27f88f]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@8187dd3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="8" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@308dd191]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@34b24358]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="18" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@2389f34d]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@6a064c43]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="9" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@7e3a808c]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@1c61deac]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="8" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@4fcda0ba]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@7c1dda4c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="4" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@4ae6aa41]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@8690b2d]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="23" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@671af97e]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@6763bbc2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="7" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@4daa6a9f]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@3342c9b5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="22" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@5613509d]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@55fb2ef3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="8" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@694d1208]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@6959dcc4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="7" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@1d82d48a]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@2c245edd]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="18" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@596f5052]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@2e0c9cac]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="3" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@6685ce14]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@119f24e5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="9" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@50b50ac2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@1ac8e37a]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="7" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@3bb888e6]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@57470747]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="32" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@5948b0f0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@58142483]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="3" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@5935a831]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@267ea5f4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="23" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@3f773501]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@15e3fc83]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="3" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@353c7f57]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@7d81e28a]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="3" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@50ff2ba3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@5e2355d7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="25" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@4b06f10e]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@331d01b6]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="8" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@3373dfd1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@10bde42d]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="7" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@b9bfdc7]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@5d8bed24]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="16" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@62b3aabd]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@4f137c6d]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="4" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@306c1a52]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@644dac5d]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="3" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@40f698bf]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@3ff6d7ff]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="7" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@3650120c]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@6b1dcb1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="2" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@425fb51f]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@e849271]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="8" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@33bad759]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@4f48cea1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="3" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@660791d4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@4f8c0c84]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="18" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@67e24593]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@58aae33d]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="15" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@2bde2bda]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@2d07dc9d]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="31" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@2f854bec]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@7f6b7ac4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="8" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@297b4493]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@5d7b15ad]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="6" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@1dd855e9]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@62c1e2ad]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="68" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@2fc9320]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@1eaf6cbf]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="52" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@4e87a1e]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@321ec8fd]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="8" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@45571285]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@1f84b2ca]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="13" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@655d5c44]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@385fa9]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="15" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@100c81c8]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@6db27a76]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="5" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@6247320]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@72e3203b]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="4" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@7c93a3a3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@794c5df6]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="3" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@55fb297c]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@20c0308d]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="24" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@43779c55]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@2218a123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="3" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@6b20ab9]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@902d957]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="6" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@620cc9f2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@6e30bc06]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="17" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@fa07af0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@2a38a557]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="6" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@27c3d58c]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@3132e40f]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="11" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@7cde076c]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@8a8cbfe]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="7" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@407a9c8]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@40b3e3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="9" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@ee7462a]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@543d2cd7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="3" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@58fd06b]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@5aa7ba2e]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="24" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@1f751c03]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@6cd99ca2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="4" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@4dd55f48]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@74039ccb]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="5" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@924ca1e]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@30547b1b]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="20" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@70ae45b7]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@37d1e936]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="19" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@31e34bb0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@5819db0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="14" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@492f2eb3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@364586f7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="4" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@75119dbe]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@79780117]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="4" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@29313258]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@5246a39d]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="4" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@20b624a2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@2c4dbdbe]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="2" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@7b933224]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@1d10cbe5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="3" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@568e0822]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@31c632a4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="18" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@7ab1208b]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@334be0e]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="10" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@75f370c1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@55702fd5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="3" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@337013be]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@1599d2ea]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="2" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@1ba686e]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@2e61267d]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="2" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@2c93aa65]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@4e73bfc1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="15" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@142cf948]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@27f2e590]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="8" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@108d3e8f]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@3b9849e5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="2" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@6ff67adb]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@5f9c9b20]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="9" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@f9beafa]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@1e195c9f]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="2" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@2d605bf9]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@1a42cf52]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="6" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@3fbed148]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@5125cb06]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="3" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@dca2201]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@5136b1c1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="18" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@308a066d]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@498a2fb5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="9" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@51affa27]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@60deb2f5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="44" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@787f9e3e]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@2a547047]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="22" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@3da35e84]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@4eb606c1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="23" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@5f50ae35]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@5d51db95]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="11" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@3129c4e]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@705441df]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="32" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@2bbc4f4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@2d2bf8c9]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="26" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@93fe013]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@5539011f]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="7" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@19b56d72]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@49299884]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="26" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@5e4c6c3e]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@1731c22e]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="15" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@5e9ab7b3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@70ca0085]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="5" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@6bfbe5c8]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@ba22fb4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="18" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@777fc5f]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@351bdf3e]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="18" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@729a6ff1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@28615691]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="14" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@39d0b962]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@1ea097a2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="16" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@77de80b]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@339c9889]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="15" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@7245b52]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@10c35714]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="19" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@79361e09]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@7d0995f7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="31" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@c892345]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@8b6a60c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="27" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@5b50d140]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@5f6f4ef2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="28" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@2ce0b2d6]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@28df3392]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="5" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@306a74f9]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@3455f62c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="5" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@6c3d8fb6]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@680216e9]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="33" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@1858a4c7]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@1c672314]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="29" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@65004fcd]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@613fc7b5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="7" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@78fd156c]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@7cc29eab]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="22" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@23c24ac9]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@406c2ff4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="2" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@38be2200]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@3c81a1cf]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="5" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@1d73986]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@48b0b59e]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="4" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@1875a199]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@8b3818e]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="16" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@763a4681]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@2bbd43d7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="15" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@75a51dfc]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@5cfa779c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="2" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@19acd774]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@210fd6ce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="2" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@39652899]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@7cb3a7fb]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="12" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@4076d072]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@9794823]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="8" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@59efe018]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@6c23ebd5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="3" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@1ca73301]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@1ce74f1c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="14" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@2d9bd631]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@3d2a02fb]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="12" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@620a562b]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@1de22a69]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="11" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@7a422434]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@5ee86bb3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="16" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@1178818d]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@205d0569]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="5" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@35d511dc]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@6876f53d]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="3" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@724a6430]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@15532393]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="3" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@7be88d03]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@5da15d46]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="2" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@5824eb7d]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@2e27454b]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="6" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@23ea3fe3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@5c6a57e0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="5" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@135b7c47]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@2c646bba]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="3" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@4d2f7ac2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@6835775d]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="4" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@1504cfdf]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@7e0c3acf]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="6" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@df247a2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@5065e11d]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="4" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@2ec1e35e]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@66b00b85]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="7" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@44e49601]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@3603bc59]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="9" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@7faecf11]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@4961434c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="25" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@4412bab9]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@65d82def]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="25" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@394a51b3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@248cecb7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="19" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@4017e93a]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@15367c5c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="3" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@5a9b12e2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@6a90bc94]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="3" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@508790df]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@71fd4282]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="7" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@2da29f50]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@1e6bd70c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="4" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@5ff016b]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@7f10f34]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="5" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@6a18b99a]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@aac6e46]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="1" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@26da9a05]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@2f850f88]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="3" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@5a8c7025]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@29d50f1b]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="6" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@41507134]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@78313e51]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="3" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@655c4b88]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@1855fa11]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="3" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@c256d68]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@7eddd45b]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="2" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@5886af74]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@777d0997]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="1" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@2797b26c]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@1ea3e3e3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="5" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@166c24d1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@9bcbee9]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="1" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@86b398d]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@657bdafb]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="3" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@2cb9eb5f]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@2bbee54b]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="4" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@4a06a8a2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@26ebc855]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="2" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@7f08a59e]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@5861d93a]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="3" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@20720c23]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@5fd36f2e]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="4" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@740989e7]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@6e9741d8]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="1" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@4b9db298]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@986a30e]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="5" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@30eebfcf]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@61985f0e]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="16" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@2a25a462]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@10bbc0ed]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="2" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@1d2b7c90]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@7e2b9f79]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="2" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@165dd4ab]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@69612d7a]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="11" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@6698204b]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@563b3baf]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="3" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@11cab5e8]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@405c021a]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="8" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@5ea974b6]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@18a04c0f]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="7" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@562898f7]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@3d048c48]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="5" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@52937016]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@74bc01ae]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="4" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@486cc3ef]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@3f512c9f]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="11" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@c911c4e]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@346ffa8a]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="3" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@ab9c621]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@4f6c107e]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="4" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@53c8f16b]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@17e96b0f]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="7" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@53867755]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@7ddba571]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="3" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@6765ffba]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@1f658771]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="14" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@62e45b8b]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@4559b5e4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="9" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@164a5e21]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@5f908f3e]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="35" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@496bf73e]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@d27a8fc]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="7" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@64e87fc2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@7695bc88]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="17" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@2c945bc1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@38c3b491]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="15" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@6962f669]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@21b25cd0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="13" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@5448fdc]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@105d4706]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="11" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@5f6f11d3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@5b18151c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="7" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@7bfd47c9]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@7c7cfa60]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="2" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@2c7ad146]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@4ca63743]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="4" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@60fb6546]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@47ca00f4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="17" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@710636e3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@35f9c5b4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="5" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@26b84333]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@7a30257]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="5" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@7479baf0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@34018ff7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="33" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@671f1908]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@40597db1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="2" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@7c0a860d]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@72ce801e]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="9" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@657b39d7]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@1f7124df]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="15" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@16ccbf7a]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@68e3c274]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="12" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@23f3d2c3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@181952ae]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="16" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@433ac437]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@6ba818b3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="8" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@5f380709]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@4e6ad028]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="3" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@34ebfeee]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@22af3d4a]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="3" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@fbf815c]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@4fce1f66]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="3" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@4a058042]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@2ec0e3ea]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="4" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@76c0082a]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@4fd78238]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+        <test-method status="PASS" signature="parameterIntTest(testng.TestBean, testng.TestBean2)[pri:0, instance:testng.DataProviderTest2@38467116]" name="parameterIntTest" duration-ms="2" started-at="2019-12-28T14:55:46 CST" data-provider="mytest" finished-at="2019-12-28T14:55:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng.TestBean@17903b35]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testng.TestBean2@2a4896ce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+      </class> <!-- testng.DataProviderTest2 -->
+      <class name="testng.TestngTest2">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:testng.TestngTest2@26abb146]" name="beforeSuite" is-config="true" duration-ms="0" started-at="2019-12-28T14:55:46 CST" finished-at="2019-12-28T14:55:46 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:testng.TestngTest2@26abb146]" name="beforeTest" is-config="true" duration-ms="0" started-at="2019-12-28T14:55:46 CST" finished-at="2019-12-28T14:55:46 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:testng.TestngTest2@26abb146]" name="beforeClass" is-config="true" duration-ms="2" started-at="2019-12-28T14:55:46 CST" finished-at="2019-12-28T14:55:46 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testng.TestngTest2@26abb146]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2019-12-28T14:55:46 CST" finished-at="2019-12-28T14:55:46 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="b()[pri:0, instance:testng.TestngTest2@26abb146]" name="b" duration-ms="2" started-at="2019-12-28T14:55:46 CST" finished-at="2019-12-28T14:55:46 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- b -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:testng.TestngTest2@26abb146]" name="afterMethod" is-config="true" duration-ms="1" started-at="2019-12-28T14:55:46 CST" finished-at="2019-12-28T14:55:46 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testng.TestngTest2@26abb146]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-12-28T14:55:46 CST" finished-at="2019-12-28T14:55:46 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="c()[pri:0, instance:testng.TestngTest2@26abb146]" name="c" duration-ms="2" started-at="2019-12-28T14:55:46 CST" finished-at="2019-12-28T14:55:46 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- c -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:testng.TestngTest2@26abb146]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-12-28T14:55:46 CST" finished-at="2019-12-28T14:55:46 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testng.TestngTest2@26abb146]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2019-12-28T14:55:46 CST" finished-at="2019-12-28T14:55:46 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="f1()[pri:0, instance:testng.TestngTest2@26abb146]" name="f1" duration-ms="2" started-at="2019-12-28T14:55:46 CST" description="测试" finished-at="2019-12-28T14:55:46 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f1 -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:testng.TestngTest2@26abb146]" name="afterMethod" is-config="true" duration-ms="1" started-at="2019-12-28T14:55:46 CST" finished-at="2019-12-28T14:55:46 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testng.TestngTest2@26abb146]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-12-28T14:55:46 CST" finished-at="2019-12-28T14:55:46 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="a()[pri:0, instance:testng.TestngTest2@26abb146]" name="a" duration-ms="2" started-at="2019-12-28T14:55:46 CST" depends-on-methods="testng.TestngTest2.b, testng.TestngTest2.c" finished-at="2019-12-28T14:55:46 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- a -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:testng.TestngTest2@26abb146]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-12-28T14:55:46 CST" finished-at="2019-12-28T14:55:46 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:testng.TestngTest2@26abb146]" name="afterClass" is-config="true" duration-ms="0" started-at="2019-12-28T14:55:46 CST" finished-at="2019-12-28T14:55:46 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:testng.TestngTest2@26abb146]" name="afterTest" is-config="true" duration-ms="0" started-at="2019-12-28T14:55:49 CST" finished-at="2019-12-28T14:55:49 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:testng.TestngTest2@26abb146]" name="afterSuite" is-config="true" duration-ms="0" started-at="2019-12-28T14:55:49 CST" finished-at="2019-12-28T14:55:49 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- testng.TestngTest2 -->
+      <class name="testng.TestngTest">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:testng.TestngTest@65f8f5ae]" name="beforeSuite" is-config="true" duration-ms="15" started-at="2019-12-28T14:55:46 CST" finished-at="2019-12-28T14:55:46 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:testng.TestngTest@65f8f5ae]" name="beforeTest" is-config="true" duration-ms="1" started-at="2019-12-28T14:55:46 CST" finished-at="2019-12-28T14:55:46 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testng.TestngTest@65f8f5ae]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-12-28T14:55:46 CST" finished-at="2019-12-28T14:55:46 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:testng.TestngTest@65f8f5ae]" name="beforeClass" is-config="true" duration-ms="0" started-at="2019-12-28T14:55:46 CST" finished-at="2019-12-28T14:55:46 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="f()[pri:0, instance:testng.TestngTest@65f8f5ae]" name="f" duration-ms="4" started-at="2019-12-28T14:55:46 CST" description="测试" finished-at="2019-12-28T14:55:46 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:testng.TestngTest@65f8f5ae]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-12-28T14:55:46 CST" finished-at="2019-12-28T14:55:46 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:testng.TestngTest@65f8f5ae]" name="afterClass" is-config="true" duration-ms="0" started-at="2019-12-28T14:55:46 CST" finished-at="2019-12-28T14:55:46 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:testng.TestngTest@65f8f5ae]" name="afterTest" is-config="true" duration-ms="1" started-at="2019-12-28T14:55:49 CST" finished-at="2019-12-28T14:55:49 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:testng.TestngTest@65f8f5ae]" name="afterSuite" is-config="true" duration-ms="0" started-at="2019-12-28T14:55:49 CST" finished-at="2019-12-28T14:55:49 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- testng.TestngTest -->
+      <class name="testng.TestngTest3">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:testng.TestngTest3@72c8e7b]" name="beforeSuite" is-config="true" duration-ms="0" started-at="2019-12-28T14:55:46 CST" finished-at="2019-12-28T14:55:46 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:testng.TestngTest3@72c8e7b]" name="beforeTest" is-config="true" duration-ms="0" started-at="2019-12-28T14:55:46 CST" finished-at="2019-12-28T14:55:46 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:testng.TestngTest3@72c8e7b]" name="beforeClass" is-config="true" duration-ms="1" started-at="2019-12-28T14:55:46 CST" finished-at="2019-12-28T14:55:46 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testng.TestngTest3@72c8e7b]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-12-28T14:55:46 CST" finished-at="2019-12-28T14:55:46 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="b()[pri:0, instance:testng.TestngTest3@72c8e7b]" name="b" duration-ms="1" started-at="2019-12-28T14:55:46 CST" finished-at="2019-12-28T14:55:46 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- b -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:testng.TestngTest3@72c8e7b]" name="afterMethod" is-config="true" duration-ms="1" started-at="2019-12-28T14:55:46 CST" finished-at="2019-12-28T14:55:46 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testng.TestngTest3@72c8e7b]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-12-28T14:55:46 CST" finished-at="2019-12-28T14:55:46 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="c()[pri:0, instance:testng.TestngTest3@72c8e7b]" name="c" duration-ms="2" started-at="2019-12-28T14:55:46 CST" finished-at="2019-12-28T14:55:46 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- c -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:testng.TestngTest3@72c8e7b]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-12-28T14:55:46 CST" finished-at="2019-12-28T14:55:46 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testng.TestngTest3@72c8e7b]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-12-28T14:55:46 CST" finished-at="2019-12-28T14:55:46 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="f2()[pri:0, instance:testng.TestngTest3@72c8e7b]" name="f2" duration-ms="1" started-at="2019-12-28T14:55:46 CST" finished-at="2019-12-28T14:55:46 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f2 -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:testng.TestngTest3@72c8e7b]" name="afterMethod" is-config="true" duration-ms="1" started-at="2019-12-28T14:55:46 CST" finished-at="2019-12-28T14:55:46 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testng.TestngTest3@72c8e7b]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2019-12-28T14:55:46 CST" finished-at="2019-12-28T14:55:46 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="a()[pri:0, instance:testng.TestngTest3@72c8e7b]" name="a" duration-ms="3" started-at="2019-12-28T14:55:46 CST" depends-on-methods="testng.TestngTest3.b, testng.TestngTest3.c" finished-at="2019-12-28T14:55:46 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- a -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:testng.TestngTest3@72c8e7b]" name="afterMethod" is-config="true" duration-ms="1" started-at="2019-12-28T14:55:46 CST" finished-at="2019-12-28T14:55:46 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:testng.TestngTest3@72c8e7b]" name="afterClass" is-config="true" duration-ms="0" started-at="2019-12-28T14:55:46 CST" finished-at="2019-12-28T14:55:46 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:testng.TestngTest3@72c8e7b]" name="afterTest" is-config="true" duration-ms="0" started-at="2019-12-28T14:55:49 CST" finished-at="2019-12-28T14:55:49 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:testng.TestngTest3@72c8e7b]" name="afterSuite" is-config="true" duration-ms="1" started-at="2019-12-28T14:55:49 CST" finished-at="2019-12-28T14:55:49 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- testng.TestngTest3 -->
+    </test> <!-- Test1 -->
+  </suite> <!-- Suite -->
+</testng-results>

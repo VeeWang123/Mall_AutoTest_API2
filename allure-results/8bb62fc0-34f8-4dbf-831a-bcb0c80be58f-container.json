@@ -1,0 +1,1 @@
+{"uuid":"8bb62fc0-34f8-4dbf-831a-bcb0c80be58f","name":"testng.ApiTestNgVandreamSample","children":["8aa0609b-0c8b-49a6-b731-0c49d530dbde"],"befores":[{"name":"beforeClass","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1581163053318,"stop":1581163053715}],"afters":[],"links":[],"start":1581163053274,"stop":1581163057675}

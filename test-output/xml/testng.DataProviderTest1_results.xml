@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Test1"
+           tests="5"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="0.168">
+  <properties />
+  
+  
+            <testcase name="parameterIntTest" time="0.037" classname="testng.DataProviderTest1" />
+                <testcase name="parameterIntTest" time="0.036" classname="testng.DataProviderTest1" />
+                <testcase name="parameterIntTest" time="0.037" classname="testng.DataProviderTest1" />
+                <testcase name="parameterIntTest" time="0.022" classname="testng.DataProviderTest1" />
+                <testcase name="parameterIntTest" time="0.036" classname="testng.DataProviderTest1" />
+      
+</testsuite>

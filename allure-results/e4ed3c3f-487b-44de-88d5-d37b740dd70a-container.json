@@ -1,0 +1,1 @@
+{"uuid":"e4ed3c3f-487b-44de-88d5-d37b740dd70a","name":"testng.ApiTestNg","children":["6139977a-d23a-4fc8-989a-6d3bc5606170"],"befores":[{"name":"beforeClass","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1581226330549,"stop":1581226330939}],"afters":[],"links":[],"start":1581226330509,"stop":1581226334220}

@@ -1,0 +1,6 @@
+expected:  data0=='OK'&&data1=='15869003128故意写错'&&data2=='15869003128'
+
+actual: {data0=OK, data1=15869003128, data2=15869003128}
+
+Response: 
+{"status":"OK","code":200,"data":{"userId":"fa98f0e961cf0d7d0557a65bc563ada7","token":"hZ3VGKtTKuw2KVQNTKQ2v96yLuQrf5/L/B0T+5F8tVrviF95BPSfcoaCoWtnuyOb1pRuEvMjFJRQVm5H4JcrHMBargJuYlcj05Ol5rIvM4uy3RUj4UU9AZd4Y1G8QzPtBENj5nV3VY0okqz07a3FJg==","userName":"沈丹军","phoneNumber":"15869003128","accountFlag":"3","nickName":"15869003128","pwdFlag":"10","companyId":"8227b12c5de74e46711d99e98dd00629","companyName":"需方线上管理员企业","companyCode":"WJLJ000000026","companyFlag":"2","companyStatus":"3","supplierStage":null,"accountDuty":null,"accountType":"20","customerId":"264572e6413c21a759a9f1f8a152e2ba","supplierId":null,"customerLevel":"20","customerStage":"15","menuList":null,"firstLogin":null},"token":"hZ3VGKtTKuw2KVQNTKQ2v96yLuQrf5/L/B0T+5F8tVrviF95BPSfcoaCoWtnuyOb1pRuEvMjFJRQVm5H4JcrHMBargJuYlcj05Ol5rIvM4uy3RUj4UU9AZd4Y1G8QzPtBENj5nV3VY0okqz07a3FJg=="}
